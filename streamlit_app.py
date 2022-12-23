@@ -28,7 +28,7 @@ def count(text_list):
     '''
     return len(text_list)
 
-user_text=st.text_input('Enter input: ')
+user_text=st.text_area('Enter input: ')
 text_list=convert_list(user_text)
 
 if st.button('Return List'):
