@@ -31,11 +31,14 @@ def count(text_list):
 user_text=st.text_area('Enter input: ')
 text_list=convert_list(user_text)
 
+st.write('Click here to output the list')
 if st.button('Return List'):
     st.write(convert_list(user_text))
 
+st.write('Click here to output the list with upper cased elements')
 if st.button('Upper'):
     st.write(convert_upper(text_list))
 
+st.write('Click here to output the count of elements in the list')
 if st.button('Print Count'):
     st.write(count(text_list))
